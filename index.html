@@ -81,13 +81,15 @@
                     <option value="Santa Catarina">SC</option>
                     <option value="Sergipe">SE</option>
                     <option value="Tocantins">TO</option>
+                    </select>
+                <div class="sexo">
+                    <label>Sexo:  </label>
 
-                    
-                    
-                    <input type="radio" id="convidado" name="perfil" value="convidado">
-                    <label for="convidado">Masculino</label>
-                    <input type="radio" id="administrador" name="sexo" value="administrador">
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino">
                     <label for="feminino">Feminino</label>
+                </div>
                     
                     <label for="estadocivil">Est.Civil</label>
                     <select name="Solteiro" id="Solteiro">
@@ -95,14 +97,14 @@
                     <option value="Casado">Casado</option>
                     <option value="Divorciado">Divorciado</option>
                     <option value="Viúvo">Viúvo</option>
+                    </select>
+                    <label for="pass">Senha(8 caracteres):</label>
+                    <input type="password" id="pass" name="password" minlength="8" required />
+                
 
-                    <label for="cep">CEP</label>
-                    <input  name="cep" id="cep" type="text" placeholder="Digite o seu cep">
+                <div class="div1">
 
-                    <label for="pwd">Password:</label>
-                    <input type="password" id="pwd" name="pwd" placeholder="Digite sua senha">
-
-                    <br><p><strong>Deseja receber informações sobre os seguintes assuntos baixos:</strong></p>
+                    <br><p><strong>Deseja receber informações sobre os seguintes assuntos baixos:</p>
             
                     <input type="checkbox" id="informaçoes" name="informaçoes" value="Tecnologia"><label for = "informaçoes">Tecnologia</label>
 
@@ -149,8 +151,10 @@
 
                     <input type="checkbox" id="informaçoes" name="informaçoes" value="Li as regras de cadastro e autorizo a criação do usuário">
                     <label for="informaçoes">Li as regras de cadastro e autorizo a criação do usuário</label>
+                
 
                     <button type="submit">Cadastrar</button>
+                </div>
     </div>
         </div>    
             </form>
